@@ -42,7 +42,7 @@ const ColorList = ({ colors, updateColors }) => {
       window.location.reload();
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
     axiosWithAuth().post('/api/colors', colorToEdit)
       .then( res => {
         setColorToEdit(res.data)

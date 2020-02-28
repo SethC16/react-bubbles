@@ -8,5 +8,5 @@ export const axiosWithAuth = () => {
             authorization: token
         },
         baseURL: 'http://localhost:5000'
-    })
+    });
 }
